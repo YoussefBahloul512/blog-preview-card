@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --soft-gray: hsl(0, 0%, 42%);
+    --strong-gray: hsl(0, 0%, 7%);
+    --padding: 50px;
+    --m-padding: 30px;
+    --s-padding: 20px;
+    --xs-padding: 15px;
+    --xxs-padding: 5px;
+    --font-bold: 800;
+}
+
+p {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 380px;
+}
+
+.card {
+    width: 100%;
+    background-color: var(--white);
+    padding: var(--s-padding);
+    border-radius: 20px;
+    max-width: 400px;
+    border: 2px solid black;
+    box-shadow: 6px 6px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.img img {
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+.card .info {
+    text-align: left;
+    padding: 0 var(--xs-padding);
+}
+
+.card .info .text .subtitle {
+    width: max-content;
+    padding: var(--xxs-padding) var(--s-padding);
+    margin: var(--xs-padding) 0;
+    border-radius: 5px;
+    background-color: var(--yellow);
+    color: var(--strong-gray);
+    font-weight: var(--font-bold);
+}
+
+.card .info .text .date {
+    padding-bottom: var(--xs-padding);
+}
+
+.card .info .text h2 {
+    padding-bottom: var(--s-padding);
+    font-weight: var(--font-bold);
+}
+
+.card .info .text h2:hover {
+    color: var(--yellow);
+}
+
+.card .info .text .paragraph {
+    padding-bottom: var(--xs-padding);
+    color: var(--soft-gray);
+    font-weight: 500;
+}
+
+.card .info .card-user {
+    display: flex;
+    align-items: center;
+    padding-top: var(--xxs-padding);
+}
+
+.card .info .card-user img {
+    width: 50px;
+    padding-right: var(--xs-padding);
+}
+
+.card .info .card-user p {
+    font-weight: var(--font-bold);
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="img">
+        <img src="./assets/images/illustration-article.svg" alt="illustration article">
+      </div>
+      <div class="info">
+        <div class="text">
+          <div class="subtitle">
+            <p>Learning</p>
+          </div>
+          <div class="date">
+            <p> Published 21 Dec 2023 </p>
+          </div>
+          <div class="title">
+            <h2> HTML & CSS foundations </h2>
+          </div>
+          <div class="paragraph">
+            <p> These languages are the backbone of every website, defining structure, content, and presentation. </p>
+          </div>
+        </div>
+        <div class="card-user">
+          <img src="./assets/images/image-avatar.webp" alt="Greg Hooper">
+          <p> Greg Hooper </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>F
